@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Lobster Claw A — Pincer Dispatch</title>
+  <desc id="desc">Internal exploratory ClawQueue logo draft. Abstract lobster pincer shaped as a dispatch mark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07111E"/><stop offset="1" stop-color="#0A1A2C"/></linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.35"/></filter>
+    <style>
+      .label { font: 700 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing:.12em; fill:#8EA0B8; text-transform:uppercase; }
+      .word { font: 800 58px Barlow, Inter, system-ui, sans-serif; letter-spacing:-.035em; fill:#E8EDF5; }
+      .sub { font: 500 18px "DM Sans", Inter, system-ui, sans-serif; fill:#8EA0B8; }
+      .mono { font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#8EA0B8; }
+      .tile { fill:#0B1728; stroke:#1D314A; stroke-width:2; }
+      .smallTile { fill:#0B1728; stroke:#1E3653; stroke-width:1.5; }
+    </style>
+  </defs>
+  <rect width="960" height="520" rx="34" fill="url(#bg)"/>
+  <rect x="28" y="28" width="904" height="464" rx="28" fill="none" stroke="#142840"/>
+
+  <text x="64" y="72" class="label">LOBSTER CLAW · A</text>
+  <g filter="url(#soft)">
+    <rect x="86" y="125" width="230" height="230" rx="46" class="tile"/>
+    <path d="M166 296 C198 266 220 239 229 201" stroke="#F59E0B" stroke-width="28" stroke-linecap="round" fill="none"/>
+    <path d="M229 201 C250 177 276 177 286 199 C267 198 252 207 240 226" fill="none" stroke="#F59E0B" stroke-width="20" stroke-linecap="round"/>
+    <path d="M229 201 C226 170 243 151 269 152 C257 169 253 184 259 202" fill="none" stroke="#F59E0B" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="229" cy="201" r="13" fill="#FFD184"/>
+    <path d="M153 307 L134 304 L150 281" stroke="#317AE8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+    <text x="380" y="226" class="word">Claw<tspan fill="#F59E0B">Queue</tspan></text>
+  <text x="384" y="268" class="sub">local GitHub issue dispatcher</text>
+  <text x="384" y="318" class="mono">literal pincer silhouette, but still abstract enough for a devtool mark</text>
+  <g transform="translate(384 360)">
+    <rect width="52" height="52" rx="12" class="smallTile"/><path d="M18 40 C27 32 34 24 36 14" stroke="#F59E0B" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M36 14 C43 7 48 12 47 18" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M36 14 C35 5 41 3 46 5" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <rect x="76" y="8" width="36" height="36" rx="9" fill="#F59E0B"/><path d="M88 35 C95 28 100 21 101 14" stroke="#07111E" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M101 14 C107 10 110 13 109 18" stroke="#07111E" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M101 14 C101 8 105 7 109 8" stroke="#07111E" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <text x="132" y="32" class="mono">more memorable; watch for mascot/seafood associations</text>
+  </g>
+</svg>

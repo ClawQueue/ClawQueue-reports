@@ -7,7 +7,7 @@
 
 ## Goal
 
-Turn the strongest Issue #1 logo directions into concrete draft image assets that are easy to compare: **Dispatch Claw**, **Issue Switchboard**, plus one wildcard from **Queue Bracket**.
+Turn the strongest Issue #1 logo directions into concrete draft image assets that are easy to compare: **Dispatch Claw**, **Issue Switchboard**, plus one wildcard from **Queue Bracket**. This revision also responds to the retry note asking for **lobster claw** variations and another pass where the switchboard idea behaves more like a claw.
 
 ## Shared visual system
 
@@ -27,21 +27,22 @@ The SVGs are intentionally rough, geometry-first concept drafts. They are meant 
 
 ### Keep for next round
 
-1. **Dispatch Claw A — Seed Bolt**  
-   Best continuity with the current seed identity. It is simple, memorable, and likely to survive favicon/app-icon constraints.
+1. **Lobster Switchclaw B — Routing Pincer**  
+   Best response to the retry note: it makes the switchboard/routing idea feel like a claw instead of a generic network diagram. It keeps product meaning while adding a more memorable ClawQueue personality.
 
-2. **Issue Switchboard C — CQ Circuit**  
-   Best alternate if we want a more product-explanatory mark. It blends the CQ monogram with routing/dispatch without becoming a full diagram.
+2. **Dispatch Claw A — Seed Bolt**  
+   Best continuity with the current seed identity. It is simple, memorable, and likely to survive favicon/app-icon constraints.
 
 ### Also worth a quick second look
 
-- **Dispatch Claw B — Arrow Hook** if the brand should lean harder into “dispatch/action.”
-- **Issue Switchboard A — Hub Node** if the brand should be more literal and docs-first.
+- **Lobster Claw C — Negative Space Pincer** if the priority is a high-impact GitHub/avatar/favicon mark.
+- **Issue Switchboard C — CQ Circuit** if the team wants the brand to stay more abstract/product-explanatory and less lobster-like.
 
 ### Likely weaker
 
 - **Issue Switchboard B — Board Route** explains the product well at large size but is probably too detailed for a favicon.
-- **Wildcard Queue Bracket** is clean for CLI/developer contexts, but may be too cold and typographic as the primary identity.
+- **Wildcard Queue Bracket** is clean for CLI/docs contexts, but may be too cold and typographic as the primary identity.
+- **Lobster Claw A — Pincer Dispatch** is memorable, but may push too far toward literal lobster/mascot territory unless simplified.
 
 ---
 
@@ -99,6 +100,37 @@ The SVGs are intentionally rough, geometry-first concept drafts. They are meant 
 
 **Works well / breaks down:** Most brandable switchboard route and stronger at small sizes than A/B. Slightly less literal, so it may need wordmark/context early on.
 
+
+---
+
+## Lobster claw retry variants
+
+These variants respond directly to the retry comment: “try some variations based on lobster claw. The switchboard idea looks a bit like a claw, give it another try.” The goal is to borrow lobster-claw geometry without becoming a mascot, seafood brand, or glossy character.
+
+### Lobster Claw A — Pincer Dispatch
+
+![Lobster Claw A — Pincer Dispatch](assets/lobster-claw-a-pincer-dispatch.svg)
+
+**What changed:** Turns the earlier Dispatch Claw stroke into a more explicit lobster pincer: one arm, two claw tips, and a subtle blue tail/handoff cue.
+
+**Works well / breaks down:** More memorable and more name-linked than the seed bolt. Risk: if refined too literally, it could feel mascot-like or drift away from sober operator tooling.
+
+### Lobster Switchclaw B — Routing Pincer
+
+![Lobster Switchclaw B — Routing Pincer](assets/lobster-switchclaw-b-routing-pincer.svg)
+
+**What changed:** Reworks the Issue Switchboard idea so the routing paths become the claw arm and pincer. The amber hub remains the active dispatch node; blue paths keep the system/routing cue.
+
+**Works well / breaks down:** Strongest bridge between “switchboard” product meaning and “claw” brand memory. It should be tested heavily at favicon size because it has more moving parts than the seed bolt.
+
+### Lobster Claw C — Negative Space Pincer
+
+![Lobster Claw C — Negative Space Pincer](assets/lobster-claw-c-negative-space.svg)
+
+**What changed:** Uses an amber app tile with a navy negative-space pincer. This flips the mark for stronger avatar/favicon impact.
+
+**Works well / breaks down:** Highest small-icon punch and easiest to recognize as a claw. It is less subtle and may feel more consumer/mascot-adjacent than the darker operator-tool marks.
+
 ---
 
 ## Wildcard variant
@@ -114,6 +146,8 @@ The SVGs are intentionally rough, geometry-first concept drafts. They are meant 
 ---
 
 ## Next-round refinement brief
+
+If moving forward with **Lobster Switchclaw B**, simplify the pincer/routing geometry until it reads at 16px: keep the amber dispatch hub, one blue incoming path, and two amber pincer tips. Avoid adding eyes, legs, shell details, or any mascot cues.
 
 If moving forward with **Dispatch Claw A**, refine the amber stroke so it is unmistakably custom: less generic lightning, more “claw slash + dispatch angle + terminal energy.” Test as:
 
