@@ -1,8 +1,8 @@
-# ClawQueueHQ Worklog
+# ClawQueue Reports
 
-This repository stores **generated ClawQueue artifacts** for ClawQueue operating on itself.
+This repository stores **generated ClawQueue reports and durable artifacts** for the ClawQueue organization.
 
-It exists so CQ can use the same artifact/worklog discipline it recommends to others, without mixing generated reports into the main code/profile pull-request flow.
+It exists so CQ can use the same reports/artifact discipline it recommends to others, without mixing generated reports into the main code/profile pull-request flow.
 
 ## What belongs here
 
