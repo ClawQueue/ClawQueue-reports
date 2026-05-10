@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Issue Switchboard C — CQ Circuit</title>
+  <desc id="desc">Internal exploratory ClawQueue logo draft. CQ monogram with an amber dispatch node.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111E"/><stop offset="1" stop-color="#0A1A2C"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .label { font: 700 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing:.12em; fill:#8EA0B8; text-transform:uppercase; }
+      .word { font: 800 58px Barlow, Inter, system-ui, sans-serif; letter-spacing:-.035em; fill:#E8EDF5; }
+      .sub { font: 500 18px "DM Sans", Inter, system-ui, sans-serif; fill:#8EA0B8; }
+      .mono { font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#8EA0B8; }
+      .tile { fill:#0B1728; stroke:#1D314A; stroke-width:2; }
+      .smallTile { fill:#0B1728; stroke:#1E3653; stroke-width:1.5; }
+    </style>
+  </defs>
+  <rect width="960" height="520" rx="34" fill="url(#bg)"/>
+  <rect x="28" y="28" width="904" height="464" rx="28" fill="none" stroke="#142840"/>
+
+  <text x="64" y="72" class="label">ISSUE SWITCHBOARD · C</text>
+  <g filter="url(#soft)">
+    <rect x="86" y="125" width="230" height="230" rx="46" class="tile"/>
+    <path d="M150 202 C135 202 124 216 124 240 C124 267 140 286 166 286" stroke="#E8EDF5" stroke-width="18" stroke-linecap="round" fill="none"/>
+    <circle cx="226" cy="244" r="48" stroke="#317AE8" stroke-width="18" fill="none"/>
+    <path d="M226 244 H278" stroke="#317AE8" stroke-width="18" stroke-linecap="round"/>
+    <path d="M166 244 H207" stroke="#F59E0B" stroke-width="13" stroke-linecap="round"/>
+    <circle cx="207" cy="244" r="17" fill="#F59E0B"/>
+    <circle cx="166" cy="244" r="9" fill="#F59E0B"/>
+  </g>
+    <text x="380" y="226" class="word">Claw<tspan fill="#F59E0B">Queue</tspan></text>
+  <text x="384" y="268" class="sub">local GitHub issue dispatcher</text>
+  <text x="384" y="318" class="mono">monogram + switchboard: CQ letters become route and dispatch node</text>
+  <g transform="translate(384 360)">
+    <rect width="52" height="52" rx="12" class="smallTile"/><path d="M19 17 C12 18 10 25 11 30 C12 37 16 40 23 40" stroke="#E8EDF5" stroke-width="5" stroke-linecap="round" fill="none"/><circle cx="34" cy="28" r="10" stroke="#317AE8" stroke-width="5" fill="none"/><path d="M22 28 H32" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/><circle cx="32" cy="28" r="4" fill="#F59E0B"/>
+    <rect x="76" y="8" width="36" height="36" rx="9" fill="#F59E0B"/><path d="M89 18 C84 19 82 24 83 28 C84 34 88 35 92 35" stroke="#07111E" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="100" cy="27" r="7" stroke="#07111E" stroke-width="4" fill="none"/>
+    <text x="132" y="32" class="mono">most brandable switchboard route; reads less literal</text>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Issue Switchboard A — Hub Node</title>
+  <desc id="desc">Internal exploratory ClawQueue logo draft. Queued issues converge through amber dispatch node.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111E"/><stop offset="1" stop-color="#0A1A2C"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .label { font: 700 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing:.12em; fill:#8EA0B8; text-transform:uppercase; }
+      .word { font: 800 58px Barlow, Inter, system-ui, sans-serif; letter-spacing:-.035em; fill:#E8EDF5; }
+      .sub { font: 500 18px "DM Sans", Inter, system-ui, sans-serif; fill:#8EA0B8; }
+      .mono { font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#8EA0B8; }
+      .tile { fill:#0B1728; stroke:#1D314A; stroke-width:2; }
+      .smallTile { fill:#0B1728; stroke:#1E3653; stroke-width:1.5; }
+    </style>
+  </defs>
+  <rect width="960" height="520" rx="34" fill="url(#bg)"/>
+  <rect x="28" y="28" width="904" height="464" rx="28" fill="none" stroke="#142840"/>
+
+  <text x="64" y="72" class="label">ISSUE SWITCHBOARD · A</text>
+  <g filter="url(#soft)">
+    <rect x="86" y="125" width="230" height="230" rx="46" class="tile"/>
+    <g stroke="#317AE8" stroke-width="10" stroke-linecap="round" fill="none">
+      <path d="M136 178 H190"/><path d="M136 242 H190"/><path d="M136 306 H190"/>
+      <path d="M190 178 L224 242"/><path d="M190 306 L224 242"/>
+      <path d="M224 242 H270"/>
+    </g>
+    <circle cx="224" cy="242" r="24" fill="#F59E0B"/>
+    <circle cx="136" cy="178" r="13" fill="#E8EDF5"/><circle cx="136" cy="242" r="13" fill="#E8EDF5"/><circle cx="136" cy="306" r="13" fill="#E8EDF5"/><circle cx="270" cy="242" r="13" fill="#00C4B4"/>
+  </g>
+    <text x="380" y="226" class="word">Claw<tspan fill="#F59E0B">Queue</tspan></text>
+  <text x="384" y="268" class="sub">local GitHub issue dispatcher</text>
+  <text x="384" y="318" class="mono">literal routing: queued issues converge into one active dispatch node</text>
+  <g transform="translate(384 360)">
+    <rect width="52" height="52" rx="12" class="smallTile"/><path d="M12 14 H27 L36 26 H44" stroke="#317AE8" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M12 38 H27 L36 26" stroke="#317AE8" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="36" cy="26" r="6" fill="#F59E0B"/><circle cx="12" cy="14" r="4" fill="#E8EDF5"/><circle cx="12" cy="38" r="4" fill="#E8EDF5"/>
+    <rect x="76" y="8" width="36" height="36" rx="9" fill="#F59E0B"/><path d="M86 17 H96 L103 26 H110" stroke="#07111E" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M86 35 H96 L103 26" stroke="#07111E" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <text x="132" y="32" class="mono">explains CQ fastest; risk: network-tool generic</text>
+  </g>
+</svg>
