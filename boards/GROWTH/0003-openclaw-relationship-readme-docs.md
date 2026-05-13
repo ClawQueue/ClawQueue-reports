@@ -2,13 +2,14 @@
 
 **Repo reviewed:** `ClawQueue/ClawQueue` at local commit `ed35069`  
 **Deliverable type:** CMO copy review artifact, not an implementation commit  
-**External-facing status:** Draft for human review before applying to README/docs
+**External-facing status:** Draft for human review before applying to README/docs  
+**Revision note:** Updated after review feedback to make the OpenClaw main-agent intake advantage more explicit: a simple human prompt can become a full, scoped GitHub issue before CQ dispatches it.
 
 ## 1. Short diagnosis
 
 The root `README.md` already mentions OpenClaw in the opening section, the at-a-glance table, use cases, the workflow diagram, and runner/backend sections. The relationship is broadly correct, but it is spread across the page and sometimes alternates between two roles without naming the distinction crisply:
 
-- **OpenClaw as intake/context layer:** the assistant that reads project context and helps shape messy operator intent into scoped work.
+- **OpenClaw as main-agent intake/context layer:** the assistant the human operator can prompt in plain language; OpenClaw reads repo/profile context and turns that rough intent into a full, scoped GitHub issue.
 - **OpenClaw as runtime layer:** one of the local runner backends CQ can launch for specialist agents.
 
 The docs landing page at `docs/index.md` is less clear. It says CQ launches “OpenClaw, Codex, Claude Code, or another configured local runner,” but the hero, feature cards, workflow, and final positioning mostly describe generic “agents” and “runners.” A new visitor can understand that CQ dispatches work, but may not understand that the default/full-harness path is powered by OpenClaw while CQ remains the GitHub-native queue/scheduler layer.
@@ -54,10 +55,10 @@ Powered by OpenClaw for context-rich intake and, when configured, agent executio
 **Recommended insertion:**
 
 ```md
-In this model, OpenClaw is the context-rich assistant/runtime layer; ClawQueue is the GitHub-native queue, scheduler, policy, and reporting loop around that work.
+In this model, the human operator can ask OpenClaw for help in plain language; OpenClaw uses project context to shape that rough intent into a full GitHub issue, and ClawQueue provides the GitHub-native queue, scheduler, policy, and reporting loop that carries the issue through execution and review.
 ```
 
-**Rationale:** This is the clearest single-sentence mental model. It belongs near the diagram because that is where readers are trying to understand boundaries. It is not heavy-handed because it explains architecture, not brand preference.
+**Rationale:** This is the clearest single-sentence mental model after review feedback. It makes the intake advantage concrete — OpenClaw turns a simple prompt into a complete issue — while still positioning CQ as the workflow product that queues, schedules, and preserves the work in GitHub.
 
 ### 2.4 Keep the existing “How Work Moves” backend clarification, but consider a small polish
 
@@ -126,10 +127,10 @@ ClawQueue keeps source-of-truth work in GitHub Issues and Projects, then uses a 
 
 ClawQueue keeps source-of-truth work in GitHub Issues and Projects, then uses a local scheduler to pick eligible work, resolve labels into the right mode, launch the configured runner, and report the result back to the issue.
 
-OpenClaw supplies the context-rich assistant layer that can shape work before it becomes an issue and, with the default `openclaw` backend, run the specialist agents CQ dispatches.
+OpenClaw supplies the context-rich assistant layer: a human can ask the OpenClaw main agent for help in plain language, and OpenClaw can use project context to turn that rough prompt into a full GitHub issue. With the default `openclaw` backend, it can also run the specialist agents CQ dispatches.
 ```
 
-**Rationale:** This is the most important docs-index change. It explains “powered by OpenClaw” in plain architectural language while keeping the section led by GitHub/CQ. It also cleanly handles both OpenClaw roles without implying Claude Code/Codex support is gone.
+**Rationale:** This is the most important docs-index change. It explains “powered by OpenClaw” in plain architectural language while keeping the section led by GitHub/CQ. It also advertises the specific OpenClaw advantage requested in review: the operator can start with a simple human prompt, and OpenClaw’s context turns it into a real issue before CQ dispatches. It still cleanly handles both OpenClaw roles without implying Claude Code/Codex support is gone.
 
 ### 3.3 Update one feature card: “Local scheduler”
 
@@ -149,7 +150,7 @@ OpenClaw supplies the context-rich assistant layer that can shape work before it
 
 **Rationale:** This makes OpenClaw visible in the feature scan, but only as the common/default runner path. It does not overtake the product framing.
 
-### 3.4 Update the workflow labels to show OpenClaw without adding complexity
+### 3.4 Update the workflow labels to show OpenClaw intake before CQ dispatch
 
 **Current:**
 
@@ -168,7 +169,11 @@ OpenClaw supplies the context-rich assistant layer that can shape work before it
 **Recommended:**
 
 ```html
-<span>GitHub Issue</span>
+<span>Human Prompt</span>
+<b>→</b>
+<span>OpenClaw Main Agent</span>
+<b>→</b>
+<span>Full GitHub Issue</span>
 <b>→</b>
 <span>CQ Scheduler</span>
 <b>→</b>
@@ -179,23 +184,32 @@ OpenClaw supplies the context-rich assistant layer that can shape work before it
 <span>Worklog / PR / Comment</span>
 ```
 
-**Rationale:** This diagram currently hides OpenClaw behind “Local Runner.” The revised label shows it as the named primary path while preserving support for other local runners.
+**Rationale:** This directly addresses the review feedback. The current diagram starts after the valuable OpenClaw step has already happened, so it misses the strongest “powered by OpenClaw” story: an operator can give the OpenClaw main agent a simple request, OpenClaw uses context to create a full issue, and then CQ takes over as the durable scheduler/execution loop. The revised diagram adds that intake step without making CQ look secondary; CQ still owns queueing, policy, dispatch, and reporting.
 
-### 3.5 Update step 4 under “How it works”
+### 3.5 Update the “How it works” steps to advertise the OpenClaw intake advantage
 
 **Current:**
 
 ```html
+<div><strong>1. Issue created</strong><br/>A task lands in GitHub Issues or Projects.</div>
+<div><strong>2. Labels define intent</strong><br/>Labels map work to modes and safety policies.</div>
+<div><strong>3. CQ picks eligible work</strong><br/>Scheduler checks status, locks, attempts, and policy.</div>
 <div><strong>4. Runner executes locally</strong><br/>CQ launches OpenClaw, Codex, Claude Code, or another configured local runner.</div>
+<div><strong>5. Results return to GitHub</strong><br/>Comments, artifacts, branches, PR links, and next steps are written back to the issue.</div>
 ```
 
 **Recommended:**
 
 ```html
-<div><strong>4. OpenClaw or another runner executes locally</strong><br/>CQ usually launches an OpenClaw specialist agent; direct Codex or Claude Code runners can be configured when that is the approved path.</div>
+<div><strong>1. Human asks OpenClaw</strong><br/>Start with a rough operator prompt, question, or desired outcome.</div>
+<div><strong>2. OpenClaw creates the issue</strong><br/>The main agent uses repo/profile context to turn the prompt into a scoped GitHub issue with the details CQ needs.</div>
+<div><strong>3. Labels define intent</strong><br/>Labels map work to modes and safety policies.</div>
+<div><strong>4. CQ picks eligible work</strong><br/>Scheduler checks status, locks, attempts, and policy.</div>
+<div><strong>5. OpenClaw or another runner executes locally</strong><br/>CQ usually launches an OpenClaw specialist agent; direct Codex or Claude Code runners can be configured when that is the approved path.</div>
+<div><strong>6. Results return to GitHub</strong><br/>Comments, artifacts, branches, PR links, and next steps are written back to the issue.</div>
 ```
 
-**Rationale:** The current sentence already mentions OpenClaw, but it treats all runners as equally central. The revised copy clarifies the relationship while acknowledging backend flexibility and approval boundaries.
+**Rationale:** The previous recommendation only clarified execution. This version also sells the front half of the loop: OpenClaw’s context turns rough human intent into a complete issue, which is exactly where the OpenClaw relationship creates visible user value. It remains ClawQueue-first because CQ still takes over once the issue exists and preserves the durable workflow in GitHub.
 
 ### 3.6 Optional docs config change: no nav change recommended
 
@@ -219,20 +233,23 @@ I do **not** recommend this as part of the first implementation pass because the
 These changes make the OpenClaw relationship explicit at three reading depths:
 
 1. **Skimmers:** “Powered by OpenClaw” appears in the docs index signal row.
-2. **Evaluators:** the docs index explains that OpenClaw is the context-rich assistant/runtime layer, while CQ is the GitHub-native scheduler/reporting loop.
-3. **Implementers/operators:** the README clarifies that CQ decides issue selection, policy, backend launch, and reporting; OpenClaw is the primary/full-harness agent runtime but not the only supported backend.
+2. **Evaluators:** the docs index explains the two-part advantage: OpenClaw turns rough human prompts into full, context-aware GitHub issues, then CQ carries those issues through a durable GitHub scheduler/reporting loop.
+3. **Implementers/operators:** the README clarifies that CQ decides issue selection, policy, backend launch, and reporting; OpenClaw is the upstream main-agent intake path and the primary/full-harness agent runtime, but not the only supported backend.
 
-The tone remains ClawQueue-first because every proposed sentence starts from CQ’s job: GitHub work contract, scheduler, policy, local execution, reviewable output. OpenClaw is credited as the underlying assistant/runtime layer, not sold as the destination.
+The tone remains ClawQueue-first because every proposed sentence leads back to CQ’s job: GitHub work contract, scheduler, policy, local execution, reviewable output. OpenClaw is credited as the underlying assistant/runtime layer and the context advantage that makes issue creation better, not sold as the whole destination.
 
 ## 5. Proposed follow-up implementation issue body
 
 ```md
 ## Context
 
-CMO reviewed the README and docs index copy in #3 and proposed a small ClawQueue-first clarification of the OpenClaw relationship.
+CMO reviewed the README and docs index copy in #3 and proposed a small ClawQueue-first clarification of the OpenClaw relationship. The artifact was revised after review feedback to make the OpenClaw main-agent intake advantage explicit: a human can start with a rough prompt, OpenClaw uses project context to create a full GitHub issue, and CQ then handles scheduling, policy, execution, and review history.
 
 Accepted artifact:
 - <link to accepted worklog artifact>
+
+Dependency note:
+- Follow-up implementation issue #4 already exists and is parked in CQ Growth / Inbox. Move it to Todo only after this artifact is accepted.
 
 ## Task
 
@@ -254,13 +271,13 @@ Implement the copy changes only:
 5. Update the docs index signal row to include “Powered by OpenClaw.”
 6. Add the docs index OpenClaw boundary sentence after the opening section paragraph.
 7. Update the docs index Local scheduler feature card.
-8. Update the docs index workflow labels.
-9. Update docs index step 4 under “How it works.”
+8. Update the docs index workflow labels so the flow begins with `Human Prompt → OpenClaw Main Agent → Full GitHub Issue` before CQ scheduling.
+9. Update the docs index “How it works” steps so they advertise OpenClaw’s issue-creation/context advantage before CQ dispatch and local execution.
 
 ## Acceptance criteria
 
 - Copy is applied with minimal interpretation from the accepted artifact.
-- Tone remains ClawQueue-first: OpenClaw is clearly credited/explained as the context-rich assistant/runtime layer, while CQ remains the GitHub-native queue/scheduler/reporting layer.
+- Tone remains ClawQueue-first: OpenClaw is clearly credited/explained as the context-rich main-agent intake/runtime layer, while CQ remains the GitHub-native queue/scheduler/policy/reporting layer.
 - No unrelated docs/content changes.
 - Docs build or relevant docs validation passes.
 - PR includes before/after summary and links back to issue #3/artifact.
