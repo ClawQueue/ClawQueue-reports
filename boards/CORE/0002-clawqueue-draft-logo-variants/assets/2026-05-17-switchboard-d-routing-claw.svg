@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Switchboard D - Routing Claw</title>
+  <desc id="desc">A switchboard where blue routes converge into an amber lobster-claw pincer.</desc>
+  <rect width="512" height="512" rx="96" fill="#07111E"/>
+  <rect x="88" y="126" width="88" height="52" rx="16" fill="#E8EDF5" opacity=".95"/>
+  <rect x="88" y="230" width="88" height="52" rx="16" fill="#E8EDF5" opacity=".75"/>
+  <rect x="88" y="334" width="88" height="52" rx="16" fill="#E8EDF5" opacity=".55"/>
+  <path d="M176 152 C225 152 240 205 272 236" fill="none" stroke="#317AE8" stroke-width="22" stroke-linecap="round"/>
+  <path d="M176 256 H272" fill="none" stroke="#317AE8" stroke-width="22" stroke-linecap="round"/>
+  <path d="M176 360 C226 360 241 307 272 276" fill="none" stroke="#317AE8" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="284" cy="256" r="27" fill="#F59E0B"/>
+  <path d="M301 239 C339 175 388 139 434 126 C424 182 394 225 339 250" fill="none" stroke="#F59E0B" stroke-width="28" stroke-linecap="round"/>
+  <path d="M303 274 C356 283 401 315 430 369 C374 366 334 343 301 302" fill="none" stroke="#F59E0B" stroke-width="28" stroke-linecap="round"/>
+</svg>

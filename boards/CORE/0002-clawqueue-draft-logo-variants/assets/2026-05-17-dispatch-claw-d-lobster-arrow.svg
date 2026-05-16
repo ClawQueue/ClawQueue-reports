@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Dispatch Claw D - Lobster Arrow</title>
+  <desc id="desc">A dark navy app icon with an amber lobster pincer shaped into a dispatch arrow.</desc>
+  <rect width="512" height="512" rx="104" fill="#07111E"/>
+  <path d="M145 338 C211 315 252 278 282 223" fill="none" stroke="#317AE8" stroke-width="34" stroke-linecap="round"/>
+  <path d="M271 223 C300 157 355 118 414 103 C402 158 373 205 329 232" fill="none" stroke="#F59E0B" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M282 224 C335 242 381 276 408 325 C352 322 307 300 272 260" fill="none" stroke="#F59E0B" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="226" cy="294" r="15" fill="#E8EDF5"/>
+  <path d="M115 363 L166 318 L177 381 Z" fill="#F59E0B"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Dispatch Claw E - Split Pincer</title>
+  <desc id="desc">A compact lobster-claw pincer with two amber arms and blue queue ticks.</desc>
+  <rect width="512" height="512" rx="96" fill="#07111E"/>
+  <path d="M132 334 C188 332 236 309 271 264" fill="none" stroke="#317AE8" stroke-width="30" stroke-linecap="round"/>
+  <path d="M260 259 C287 178 345 129 419 104 C403 173 365 223 305 254" fill="none" stroke="#F59E0B" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M267 268 C325 275 374 310 411 368 C337 362 286 335 250 290" fill="none" stroke="#F59E0B" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="103" y="164" width="82" height="18" rx="9" fill="#E8EDF5" opacity=".92"/>
+  <rect x="103" y="212" width="118" height="18" rx="9" fill="#E8EDF5" opacity=".72"/>
+  <rect x="103" y="260" width="74" height="18" rx="9" fill="#E8EDF5" opacity=".52"/>
+</svg>

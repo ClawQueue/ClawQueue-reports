@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Wildcard - Queue Q Core</title>
+  <desc id="desc">A bold Q mark with queue slots and a dispatch tail.</desc>
+  <rect width="512" height="512" rx="104" fill="#07111E"/>
+  <circle cx="256" cy="244" r="124" fill="none" stroke="#317AE8" stroke-width="48"/>
+  <path d="M316 319 L400 402" fill="none" stroke="#F59E0B" stroke-width="48" stroke-linecap="round"/>
+  <rect x="185" y="190" width="130" height="22" rx="11" fill="#E8EDF5"/>
+  <rect x="185" y="240" width="96" height="22" rx="11" fill="#E8EDF5" opacity=".82"/>
+  <rect x="185" y="290" width="130" height="22" rx="11" fill="#E8EDF5" opacity=".64"/>
+  <path d="M372 372 L430 390 L388 430 Z" fill="#F59E0B"/>
+</svg>

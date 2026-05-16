@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Switchboard F - CQ Pincer</title>
+  <desc id="desc">A CQ monogram where the Q loop becomes a routing hub and pincer.</desc>
+  <rect width="512" height="512" rx="96" fill="#07111E"/>
+  <path d="M234 162 C206 134 151 135 121 169 C83 212 91 300 132 340 C164 371 213 369 240 342" fill="none" stroke="#E8EDF5" stroke-width="38" stroke-linecap="round"/>
+  <circle cx="318" cy="256" r="83" fill="none" stroke="#317AE8" stroke-width="38"/>
+  <path d="M360 313 L420 374" fill="none" stroke="#317AE8" stroke-width="38" stroke-linecap="round"/>
+  <path d="M323 254 C359 201 399 171 438 162 C431 210 406 246 361 270" fill="none" stroke="#F59E0B" stroke-width="24" stroke-linecap="round"/>
+  <path d="M326 268 C371 273 409 299 434 342 C388 338 354 319 326 288" fill="none" stroke="#F59E0B" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="318" cy="256" r="19" fill="#F59E0B"/>
+</svg>

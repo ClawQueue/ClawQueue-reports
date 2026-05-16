@@ -1,164 +1,156 @@
 # ClawQueue draft logo variants
 
 **Issue:** ClawQueue/ClawQueue#2  
-**Date:** 2026-05-10  
-**Status:** Internal exploratory logo drafts, not final/public brand lock-in.  
+**Date:** 2026-05-17  
+**Status:** Retry-pass internal exploratory logo drafts. Not final/public brand lock-in.  
 **Source brief:** [Issue #1 logo direction exploration](../0001-clawqueue-logo-directions.md)
 
 ## Goal
 
-Turn the strongest Issue #1 logo directions into concrete draft image assets that are easy to compare: **Dispatch Claw**, **Issue Switchboard**, plus one wildcard from **Queue Bracket**. This revision also responds to the retry note asking for **lobster claw** variations and another pass where the switchboard idea behaves more like a claw.
+Turn the Issue #1 logo directions into actual draft image assets for comparison. This retry pass responds to the non-CQ feedback asking for more lobster-claw variation and another try at making the switchboard idea feel like a claw, while also using the latest Issue #1 recommendation to include a Queue Q Core wildcard.
 
-## Shared visual system
+## Evidence And Assumptions
 
-All drafts use the current ClawQueue visual cues from the README/design-system surface:
+- Issue #2 asked for 2-3 Dispatch Claw variants, 2-3 Issue Switchboard variants, and an optional wildcard.
+- The retry comment specifically asked for lobster-claw variations and noted that the switchboard idea already looked somewhat claw-like.
+- The latest Issue #1 artifact recommends Queue Q Core as the strongest route, Dispatch Claw as the strongest alternate, and the mascot as supporting art rather than the primary small-size mark.
+- The older Issue #2 SVGs remain in `assets/` for comparison; the newest retry-pass assets are prefixed `2026-05-17-`.
+
+## Shared Visual System
+
+All drafts are rough geometry-first SVGs using the ClawQueue palette requested in the issue:
 
 - deep navy: `#07111E`
 - system blue: `#317AE8`
 - active/claw amber: `#F59E0B`
 - light foreground: `#E8EDF5`
-- dark-mode operator tooling, mono labels, compact GitHub/avatar/favicon checks
 
-The SVGs are intentionally rough, geometry-first concept drafts. They are meant to test direction, not polish.
-
----
+The drafts avoid mascots, glossy 3D, AI sparkles, and dense network diagrams. They are meant to test direction at GitHub avatar, favicon, and README lockup sizes before any polish pass.
 
 ## Recommendation
 
-### Keep for next round
+### Keep For Next Round
 
-1. **Lobster Switchclaw B — Routing Pincer**  
-   Best response to the retry note: it makes the switchboard/routing idea feel like a claw instead of a generic network diagram. It keeps product meaning while adding a more memorable ClawQueue personality.
+1. **Switchboard E - Pincer Hub**  
+   Best answer to the retry: it keeps the switchboard/product meaning, but the output side is now clearly lobster-claw/pincer shaped. It is simpler than the previous routing-pincer version and should survive small-size testing better.
 
-2. **Dispatch Claw A — Seed Bolt**  
-   Best continuity with the current seed identity. It is simple, memorable, and likely to survive favicon/app-icon constraints.
+2. **Wildcard - Queue Q Core**  
+   Best aligned with the latest Issue #1 decision matrix. It is the clearest primary app-icon candidate if the team wants the product behavior, not the lobster metaphor, to lead.
 
-### Also worth a quick second look
+### Secondary Candidate
 
-- **Lobster Claw C — Negative Space Pincer** if the priority is a high-impact GitHub/avatar/favicon mark.
-- **Issue Switchboard C — CQ Circuit** if the team wants the brand to stay more abstract/product-explanatory and less lobster-like.
+- **Dispatch Claw D - Lobster Arrow** if Manos wants a more expressive, name-linked mark. It has the strongest lobster-claw personality, but it needs small-size testing to make sure it does not become too literal or mascot-adjacent.
 
-### Likely weaker
+### Likely Weaker
 
-- **Issue Switchboard B — Board Route** explains the product well at large size but is probably too detailed for a favicon.
-- **Wildcard Queue Bracket** is clean for CLI/docs contexts, but may be too cold and typographic as the primary identity.
-- **Lobster Claw A — Pincer Dispatch** is memorable, but may push too far toward literal lobster/mascot territory unless simplified.
-
----
-
-## Dispatch Claw variants
-
-### Dispatch Claw A — Seed Bolt
-
-![Dispatch Claw A — Seed Bolt](assets/dispatch-claw-a-seed-bolt.svg)
-
-**What changed:** Refines the existing amber lightning/claw seed into a heavier, more app-icon-ready stroke inside a navy rounded tile.
-
-**Works well / breaks down:** Strongest tiny-mark candidate and best continuity with the current README/design system. Risk: if left too lightning-like, it can feel generic or over-index on speed rather than durable workflow.
-
-### Dispatch Claw B — Arrow Hook
-
-![Dispatch Claw B — Arrow Hook](assets/dispatch-claw-b-arrow-hook.svg)
-
-**What changed:** Pushes the claw stroke toward a dispatch arrow with a hooked tail, making the “send work to an agent” motion more explicit.
-
-**Works well / breaks down:** Good for motion/dispatch language and UI activity states. At very small sizes the hook/arrow geometry may lose clarity faster than A.
-
-### Dispatch Claw C — Queue Slashes
-
-![Dispatch Claw C — Queue Slashes](assets/dispatch-claw-c-queue-slashes.svg)
-
-**What changed:** Splits the claw idea into multiple active slashes, adding queue rhythm and making the mark less like a single lightning bolt.
-
-**Works well / breaks down:** More ownable than a plain bolt and feels agent-active. Risk: could read as generic speed marks or “performance tooling” rather than issue dispatch.
+- **Dispatch Claw F - Queue Snap** has useful queue rhythm but is busier than D/E.
+- **Switchboard F - CQ Pincer** is conceptually rich but may be too clever unless the monogram is refined.
+- **Dispatch Claw E - Split Pincer** is solid, but less distinctive than D and less product-clear than Switchboard E.
 
 ---
 
-## Issue Switchboard variants
+## 2026-05-17 Retry-Pass Dispatch Claw Variants
 
-### Issue Switchboard A — Hub Node
+### Dispatch Claw D - Lobster Arrow
 
-![Issue Switchboard A — Hub Node](assets/issue-switchboard-a-hub-node.svg)
+![Dispatch Claw D - Lobster Arrow](assets/2026-05-17-dispatch-claw-d-lobster-arrow.svg)
 
-**What changed:** Uses a simple routing diagram: queued issue inputs converge into one amber dispatch node and exit toward a runner/output.
+**What changed:** Makes the lobster pincer more explicit while preserving a forward dispatch motion. Blue marks the incoming queue path; amber marks the active claw/action.
 
-**Works well / breaks down:** Explains CQ quickly and supports docs/architecture pages. Risk: can feel like generic network/infrastructure software unless paired with a strong wordmark.
+**Works well / breaks down:** Strongest expressive lobster candidate. Works for avatar/sticker energy; may become too literal if refined with more biological detail.
 
-### Issue Switchboard B — Board Route
+### Dispatch Claw E - Split Pincer
 
-![Issue Switchboard B — Board Route](assets/issue-switchboard-b-board-route.svg)
+![Dispatch Claw E - Split Pincer](assets/2026-05-17-dispatch-claw-e-split-pincer.svg)
 
-**What changed:** Makes the GitHub Project board metaphor visible: a queued issue card routes from a column into an active worker lane.
+**What changed:** Compresses the pincer into a simpler app-icon mark and adds three queue ticks to keep the product context visible.
 
-**Works well / breaks down:** Best at explaining “GitHub Issues/Projects as control plane.” Too detailed for favicon use; better as onboarding/header illustration than primary logo.
+**Works well / breaks down:** More balanced than D for product clarity. The queue ticks may disappear at favicon size, so the pincer must remain readable without them.
 
-### Issue Switchboard C — CQ Circuit
+### Dispatch Claw F - Queue Snap
 
-![Issue Switchboard C — CQ Circuit](assets/issue-switchboard-c-cq-circuit.svg)
+![Dispatch Claw F - Queue Snap](assets/2026-05-17-dispatch-claw-f-queue-snap.svg)
 
-**What changed:** Compresses switchboard logic into a CQ-like monogram: the `C` becomes an incoming route, the `Q` becomes the dispatch loop, and amber marks the active handoff.
+**What changed:** Turns the claw into a snapping action over visible issue slots, making the queue interaction more direct.
 
-**Works well / breaks down:** Most brandable switchboard route and stronger at small sizes than A/B. Slightly less literal, so it may need wordmark/context early on.
-
-
----
-
-## Lobster claw retry variants
-
-These variants respond directly to the retry comment: “try some variations based on lobster claw. The switchboard idea looks a bit like a claw, give it another try.” The goal is to borrow lobster-claw geometry without becoming a mascot, seafood brand, or glossy character.
-
-### Lobster Claw A — Pincer Dispatch
-
-![Lobster Claw A — Pincer Dispatch](assets/lobster-claw-a-pincer-dispatch.svg)
-
-**What changed:** Turns the earlier Dispatch Claw stroke into a more explicit lobster pincer: one arm, two claw tips, and a subtle blue tail/handoff cue.
-
-**Works well / breaks down:** More memorable and more name-linked than the seed bolt. Risk: if refined too literally, it could feel mascot-like or drift away from sober operator tooling.
-
-### Lobster Switchclaw B — Routing Pincer
-
-![Lobster Switchclaw B — Routing Pincer](assets/lobster-switchclaw-b-routing-pincer.svg)
-
-**What changed:** Reworks the Issue Switchboard idea so the routing paths become the claw arm and pincer. The amber hub remains the active dispatch node; blue paths keep the system/routing cue.
-
-**Works well / breaks down:** Strongest bridge between “switchboard” product meaning and “claw” brand memory. It should be tested heavily at favicon size because it has more moving parts than the seed bolt.
-
-### Lobster Claw C — Negative Space Pincer
-
-![Lobster Claw C — Negative Space Pincer](assets/lobster-claw-c-negative-space.svg)
-
-**What changed:** Uses an amber app tile with a navy negative-space pincer. This flips the mark for stronger avatar/favicon impact.
-
-**Works well / breaks down:** Highest small-icon punch and easiest to recognize as a claw. It is less subtle and may feel more consumer/mascot-adjacent than the darker operator-tool marks.
+**Works well / breaks down:** Good as an explanatory draft and README-side illustration. Probably too busy for the primary favicon unless simplified.
 
 ---
 
-## Wildcard variant
+## 2026-05-17 Retry-Pass Issue Switchboard Variants
 
-### Wildcard — Queue Bracket
+### Switchboard D - Routing Claw
 
-![Wildcard — Queue Bracket](assets/wildcard-queue-bracket.svg)
+![Switchboard D - Routing Claw](assets/2026-05-17-switchboard-d-routing-claw.svg)
 
-**What changed:** Uses the weaker/alternate Queue Bracket concept as a typographic developer mark: `[C Q]`, with queue bars embedded inside the Q.
+**What changed:** Keeps three issue-card inputs and turns the output side into a lobster-claw pincer.
 
-**Works well / breaks down:** Good for CLI/docs badges, monochrome use, and developer-native surfaces. It may be too cold and too `CQ`-dependent to carry the main product identity alone.
+**Works well / breaks down:** Strong literal bridge between switchboard and claw. Still a bit diagrammatic, so it may work better in docs than as the tiny primary mark.
+
+### Switchboard E - Pincer Hub
+
+![Switchboard E - Pincer Hub](assets/2026-05-17-switchboard-e-pincer-hub.svg)
+
+**What changed:** Simplifies the switchboard to three input nodes, one amber dispatch hub, and two pincer outputs.
+
+**Works well / breaks down:** Best balance of product meaning and lobster-claw memorability. Recommended for the next visual refinement pass.
+
+### Switchboard F - CQ Pincer
+
+![Switchboard F - CQ Pincer](assets/2026-05-17-switchboard-f-cq-pincer.svg)
+
+**What changed:** Compresses the switchboard into a CQ-like monogram where the Q loop becomes the dispatch hub and pincer.
+
+**Works well / breaks down:** Most brandable if the team wants a monogram. It may require too much explanation until the brand is established.
 
 ---
 
-## Next-round refinement brief
+## 2026-05-17 Wildcard
 
-If moving forward with **Lobster Switchclaw B**, simplify the pincer/routing geometry until it reads at 16px: keep the amber dispatch hub, one blue incoming path, and two amber pincer tips. Avoid adding eyes, legs, shell details, or any mascot cues.
+### Wildcard - Queue Q Core
 
-If moving forward with **Dispatch Claw A**, refine the amber stroke so it is unmistakably custom: less generic lightning, more “claw slash + dispatch angle + terminal energy.” Test as:
+![Wildcard - Queue Q Core](assets/2026-05-17-wildcard-queue-q-core.svg)
 
-- 16px favicon
-- 40px GitHub/avatar mark
-- README horizontal wordmark
-- monochrome icon
-- SVG on deep navy and on amber backgrounds
+**What changed:** Uses the latest Issue #1 recommendation: a bold Q with queue slots and an amber dispatch tail.
 
-If moving forward with **Issue Switchboard C**, simplify the monogram even further and test whether the CQ/routing idea remains legible without explanatory copy.
+**Works well / breaks down:** Best primary-logo candidate if the team prioritizes clarity, small-size use, and continuity with the current brand pack. It is less lobster-like, so it should be compared directly against Switchboard E before selection.
 
-## Human approval note
+---
+
+## Earlier Variants Retained For Comparison
+
+The earlier assets remain in this artifact folder:
+
+- Dispatch Claw A/B/C
+- Issue Switchboard A/B/C
+- Lobster Claw A/C
+- Lobster Switchclaw B
+- Queue Bracket wildcard
+
+Those are still useful context, but the recommended next-round choices are now **Switchboard E - Pincer Hub**, **Wildcard - Queue Q Core**, and optionally **Dispatch Claw D - Lobster Arrow**.
+
+## Next-Round Refinement Brief
+
+Create a comparison sheet with:
+
+- Switchboard E, Queue Q Core, and Dispatch Claw D side by side
+- icon-only, horizontal wordmark, monochrome, and dark/light background versions
+- 16px, 32px, 128px, and README-header previews
+- one short scorecard for readability, distinctiveness, product clarity, and current-brand fit
+
+For Switchboard E, simplify aggressively: keep three input dots, one amber dispatch hub, and the two pincer outputs. Avoid legs, eyes, shell texture, gradients, or any mascot cues.
+
+For Queue Q Core, refine the Q tail so it feels custom and lightly claw-like without becoming decorative. The mark should still read as queue/dispatch first.
+
+## Success Metric
+
+This artifact succeeds if Manos can pick one of these next actions:
+
+- refine Switchboard E as the lobster-switchboard direction
+- refine Queue Q Core as the primary app/logo direction
+- ask for a three-way visual comparison sheet before choosing
+
+## Human Approval Note
 
 These are internal draft image assets for comparison only. Before public use, run human review, small-size legibility checks, basic similarity checks against neighboring devtool logos, and a proper SVG cleanup pass.
+
