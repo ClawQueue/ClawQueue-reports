@@ -1,200 +1,216 @@
-# ClawQueue logo direction exploration
+# ClawQueue Logo Direction Exploration
 
 **Issue:** ClawQueue/ClawQueue#1  
-**Date:** 2026-05-10  
-**Status:** Internal concept exploration, not a final/public brand decision.
+**Date:** 2026-05-17  
+**Status:** Internal concept exploration for human selection. Not public launch guidance. No product/source files changed.
 
 ## Goal
 
-Propose a small set of logo directions for ClawQueue based on the current README, design system, and repo presentation, so a human can choose which route is worth visual exploration next.
+Study the current ClawQueue README, product framing, docs tone, and current brand assets, then propose a small set of logo directions a human can choose from before any further visual generation or implementation work.
 
-## Evidence reviewed
+## Audience Or Segment
 
-- `README.md` positions ClawQueue as a **local GitHub issue dispatcher for one operator and their agents**.
-- The core framing is intentionally narrow and operator-controlled: **GitHub is the control plane, the machine runs the workers, and policy stays in editable markdown/config**.
-- The README repeatedly emphasizes durable work contracts, GitHub Issues/Projects, local execution, audit trail, review history, profile-specific agents, and human review.
-- The warning block makes the trust boundary explicit: CQ shells out to local CLIs and expects a trusted operator.
-- The repo presentation already has a dark, operational visual language: deep navy `#07111E`, blue `#317AE8`, amber/claw accent `#F59E0B`, mono-heavy labels, terminal density, and a current lightning/claw-like seed mark in `docs/banner.svg` and `preview/brand.html`.
-- Voice/tone examples in `preview/brand.html` favor direct, precise, operational copy over vague AI-marketing language.
+Primary audience: trusted operators, maintainers, and technical users who understand GitHub Issues/Projects and want local, reviewable agent work without adopting a hosted PM layer.
 
-## Product personality and visual cues
+Secondary audience: contributors evaluating whether ClawQueue is a serious, inspectable workflow tool or just another broad agent-orchestration pitch.
 
-**Personality:** precise, local-first, durable, inspectable, agentic but not magical, trusted-operator oriented, GitHub-native, safety-conscious, and intentionally small.
+## Evidence Reviewed
 
-**Tone:** operational, sober, slightly technical, explicit about boundaries, anti-hype, friendly to builders/operators who want control.
+- Current root README.md, especially the framing: local human-agent workflow engine for GitHub, GitHub holds the durable work contract, your machine runs the workers, and policy stays in markdown/config.
+- Current docs homepage copy and flow: Local GitHub issue dispatch for operator-controlled AI agents and Keep the contract in GitHub. Run the workers locally.
+- COMPANY_CHARTER.md, which emphasizes evidence before claims, human accountability, small verifiable steps, and human approval before external commitments.
+- Current design-system notes in docs/.vitepress/brand/README.md: full horizontal logo, mascot hero art, clean white docs surfaces, deep navy workflow panels, orange/red claw gradient CTAs, Space Grotesk/Inter typography.
+- Current brand tokens: deep navy, ink navy, lobster orange/red, cyan/signal blue, ice blue, white, muted blue-gray.
+- Current visual assets: horizontal wordmark, icon-with-queue, queue symbol, mascot-only art, favicons/app icons.
 
-**Positioning cues:** CQ is not trying to be a broad SaaS PM layer or an “AI company OS” brand. It is closer to a dispatch switchboard / queue runner / control loop that sits between GitHub issues and local agent runners.
+## Product Personality And Visual Cues
 
-**Visual cues already present:** dark control-plane background, amber activity/accent, blue system/control color, dense UI metadata, sharp-radius cards, monospace labels, and a compact CQ short-name convention.
+ClawQueue reads as:
 
-## Logo direction criteria
+- local-first and operator-controlled
+- GitHub-native rather than a new PM surface
+- inspectable, policy-driven, and markdown/config-friendly
+- agentic, but explicitly not magical or fully autonomous
+- pragmatic and safety-conscious, with human review as a core part of the loop
+- friendly enough for docs and onboarding, but still a tool for trusted technical operators
 
-A strong CQ logo should:
+The current brand pack already shifted the visual tone from the earlier dark terminal-only seed into a friendlier docs identity: clean white surfaces, navy/orange/cyan accents, rounded wordmark, and a robot/claw mascot. That is useful, but it creates a real decision: should the primary logo lead with the current friendly mascot energy, or should it tighten around the actual product behavior: queue, dispatch, local control, review?
 
-1. Work as a tiny GitHub/avatar/favicon mark as well as a README wordmark.
-2. Signal dispatch, queueing, local control, or human-agent handoff without becoming a generic robot logo.
-3. Preserve the current dark/amber/blue operational system.
-4. Avoid overclaiming autonomy or magic.
-5. Stay simple enough to render in SVG/CSS and to sit comfortably inside GitHub documentation.
+## Logo Direction Criteria
 
----
+A strong ClawQueue logo should:
 
-## Direction 1: **Dispatch Claw**
+1. Work at favicon/GitHub avatar size, not only as a large hero illustration.
+2. Make queue and dispatch legible without becoming a literal architecture diagram.
+3. Preserve the current orange/navy/cyan system unless there is a strong reason to reset it.
+4. Avoid generic robot, AI sparkle, and autonomous-agent cliches.
+5. Support the serious trust boundary: GitHub is the durable contract, humans approve, workers run locally.
+6. Pair well with the current mascot without forcing the mascot to carry every logo use case.
 
-**Concept label:** A refined version of the current lightning/claw seed mark.
+## Direction 1: Queue Q Core
 
-**Rationale:** This direction keeps continuity with the existing banner and design system while making the symbol more ownable. The current amber bolt already implies agent activity, dispatch, and fast execution. By shaping it slightly more like a claw stroke or hooked path, the mark can carry both “Claw” and “dispatch” without adding new metaphors.
+**Concept label:** The Q becomes the product mark: queue slots, dispatch arrow, and review loop in one simple glyph.
 
-**Brand feel:** energetic, compact, agent-active, familiar to current repo presentation, closest to the existing seed brand.
+**Rationale:** The current assets already imply this route through the queue-symbol and icon-with-queue. It is the most direct bridge between the product name and the product behavior. It can become the core logo mark while the mascot remains supporting art.
 
-**Rough visual description:** A rounded square app tile in deep navy or translucent amber. Inside: a single angular amber stroke, somewhere between a lightning bolt, terminal cursor path, and claw slash. Wordmark uses `Claw` in light foreground and `Queue` in amber, with the icon left-aligned.
+**Brand feel:** clear, product-specific, technical but approachable, durable, less hype-driven than a mascot-first system.
+
+**Rough visual description:** A bold rounded Q built from navy outline and orange active segment. Inside the counter: two or three short queue bars or issue slots. The tail of the Q becomes a dispatch arrow or claw-like movement stroke. Optional cyan dot marks the active runner, but the small-size version should work in one or two colors.
 
 **Works well for:**
 
-- README banner and badges
 - GitHub org/repo avatar
-- Favicon/app icon
-- Existing dark-mode design system
-- “Agent dispatched” moments in UI
+- favicon/app icon
+- README header next to the wordmark
+- docs navigation
+- monochrome or two-color uses
+- explaining queue plus dispatch quickly
 
 **Might fail when:**
 
-- The lightning shape feels too generic or too much like “speed/energy” rather than durable workflow.
-- It over-indexes on “Claw” and under-explains “Queue”.
-- It resembles existing automation/devtool marks if not customized enough.
+- The internal queue bars become too small or decorative at 16px.
+- The mark feels too close to a generic SaaS app icon if the tail is not distinctive.
+- The Q carries the name well, but may not communicate Claw unless the dispatch tail has a subtle hook.
 
----
+## Direction 2: Dispatch Claw
 
-## Direction 2: **Issue Switchboard**
+**Concept label:** A single orange claw/arrow stroke that signals grabbing, routing, and sending work.
 
-**Concept label:** GitHub issues routed through a local control node.
+**Rationale:** This keeps the strongest metaphor from the name. It can be more ownable and energetic than a pure Q, while staying simpler than the mascot. It also aligns with the orange/red claw gradient already used for CTAs.
 
-**Rationale:** CQ’s clearest product truth is routing issue work into agent runs. A switchboard/router mark would express the product more literally than a claw. It can visually connect GitHub issue cards, labels, and runner endpoints while staying sober and operational.
+**Brand feel:** fast, active, memorable, slightly aggressive, strong as a badge or sticker.
 
-**Brand feel:** trustworthy, infrastructural, system-level, precise, less flashy than the claw mark.
-
-**Rough visual description:** A compact node-and-path icon: three small queue dots/cards on the left converge into a central amber dispatch node, then split toward one or two runner outputs. The mark could be drawn as circuit-like lines or GitHub-project column paths inside a rounded square. Amber marks the active dispatch node; blue marks the system paths.
+**Rough visual description:** A deep navy rounded square or transparent mark containing one angular orange/red stroke. The stroke should combine a claw hook, dispatch arrow, and terminal/action pulse. Pair it with the existing wordmark or a cleaned-up ClawQueue lockup.
 
 **Works well for:**
 
-- Explaining the product at a glance to new operators
-- Architecture diagrams and docs
-- Enterprise/internal tooling contexts
-- Visualizing “GitHub control plane → local runners”
+- avatar and favicon where simplicity matters
+- launch graphics and stickers
+- worker dispatched moments in UI
+- retaining some continuity with the current claw/mascot language
 
 **Might fail when:**
 
-- At favicon size, routing lines may become too detailed.
-- It could feel like generic infrastructure/network software.
-- It is less emotionally distinctive than a claw/animal-inspired mark.
+- It can read as generic speed/lightning rather than durable work routing.
+- It underplays GitHub, queueing, and review.
+- If too sharp, it may clash with the current friendly rounded wordmark.
 
----
+## Direction 3: Operator Switchboard
 
-## Direction 3: **Queue Bracket**
+**Concept label:** GitHub issue queue routes through a local control node into approved runners.
 
-**Concept label:** A typographic CQ mark built from brackets, queue slots, and terminal rhythm.
+**Rationale:** This is the most literal product-positioning route. It says ClawQueue is a control loop, not a mascot or generic AI tool. It is especially strong for docs, architecture diagrams, and operator trust.
 
-**Rationale:** The README and design system are mono-heavy and operator-centric. A bracket-based logo could emphasize markdown/config, local CLIs, issue contracts, and inspectable workflows. This is the most “developer-native” direction.
+**Brand feel:** infrastructural, sober, precise, control-plane oriented.
 
-**Brand feel:** technical, restrained, terminal-native, inspectable, precise.
-
-**Rough visual description:** A monogram-like `CQ` or `[CQ]` mark where the `Q` becomes a queued item or circular status loop. Possible variants: `[C→Q]`, `CQ>` with a tiny amber cursor, or three stacked queue bars nested inside a `Q`. The wordmark could use Barlow for warmth but keep the icon in JetBrains Mono.
+**Rough visual description:** Three small issue cards or dots enter from the left, converge into one orange dispatch node, then route out through two blue lines. A small return path or check node suggests review. The icon should be aggressively simplified: one node, two paths, no miniature full diagram.
 
 **Works well for:**
 
-- CLI docs and terminal surfaces
-- GitHub README/favicon contexts
-- Developer/operator trust
-- Monochrome applications
+- technical docs
+- diagrams and system explanations
+- enterprise/internal-tool contexts
+- landing-page sections about GitHub in, local work out
 
 **Might fail when:**
 
-- It may feel too cold or too generic as a product brand.
-- `CQ` alone may not communicate enough to new users.
-- The bracket/cursor language may overlap many devtool identities.
+- It may be too complex for favicon size.
+- It can feel generic, like networking or workflow automation.
+- It has less emotional memorability than the claw or mascot routes.
 
----
+## Direction 4: Mascot Companion System
 
-## Direction 4: **Human-in-the-Loop Queue**
+**Concept label:** Keep the robot/claw mascot as the memorable brand character, but do not make it the only logo.
 
-**Concept label:** A queue lane with a human approval/checkpoint built into the flow.
+**Rationale:** The current mascot is distinctive and approachable. It helps soften an otherwise technical, trust-boundary-heavy product. But the mascot has too much detail to carry favicon, README badge, or serious control-plane use alone.
 
-**Rationale:** The README is explicit that CQ does not remove humans: issues become durable contracts, workers report results, and humans review before accepting or publishing. A mark that shows a queue passing through a deliberate checkpoint would distinguish CQ from “autonomous agent” hype.
+**Brand feel:** friendly, playful developer tool, memorable, community-friendly.
 
-**Brand feel:** safe, deliberate, review-oriented, calm, governance-friendly.
-
-**Rough visual description:** Three small stacked issue cards or queue bars move left-to-right through a central checkpoint/hand-off symbol. The checkpoint could be a small amber gate, check, or pause/control glyph. The right side resolves into a completed issue card or comment bubble. The shape should remain geometric, not illustrative.
+**Rough visual description:** Use the current mascot in hero art, social preview, stickers, empty states, and launch posts. Create a simplified mascot head/claw silhouette for large app-icon uses. Pair with Queue Q Core or Dispatch Claw as the primary small mark.
 
 **Works well for:**
 
-- Communicating trust boundaries and review flow
-- Operator workflow docs
-- Larger header art or onboarding pages
-- Teams concerned about agent safety/auditability
+- docs homepage hero
+- social preview art
+- community/sticker assets
+- making ClawQueue feel more human and less sterile
 
 **Might fail when:**
 
-- It may become too explanatory and not iconic enough.
-- The human-review concept is harder to compress into a tiny mark.
-- If drawn too literally, it could look like generic process-management software.
+- It can make the product feel toy-like if overused in serious docs.
+- It loses legibility quickly at small sizes.
+- Robot imagery risks blending into generic AI-tool branding.
 
----
+## Direction 5: Terminal Queue Badge
 
-## Direction 5: **Local Control Plane**
+**Concept label:** A compact CLI/control badge that makes local execution and inspectability the main signal.
 
-**Concept label:** A compact “machine + GitHub board” control-plane emblem.
+**Rationale:** The README repeatedly emphasizes local machine execution, shelling out, markdown/config policy, and trusted operator control. A terminal badge could foreground that difference from hosted SaaS or opaque agent platforms.
 
-**Rationale:** CQ’s differentiated promise is local execution with GitHub as durable state. This direction leans into the local-machine/operator boundary rather than the agent or queue metaphor alone.
+**Brand feel:** developer-native, restrained, inspectable, practical.
 
-**Brand feel:** grounded, secure, local-first, control-oriented, infrastructure-grade.
-
-**Rough visual description:** A minimal terminal/window rectangle containing a small queue column and an amber active runner dot. Optional outer rounded-square frame implies a local machine. A tiny branch/issue path could enter from the top-left and exit as a comment/artifact line.
+**Rough visual description:** A rounded terminal window or badge with CQ and two queue bars. An orange prompt/cursor or active job dot marks the dispatch moment. The wordmark can stay friendly, while the badge signals that ClawQueue is a local operator tool.
 
 **Works well for:**
 
-- Trust-boundary messaging
-- Docs about setup, private config, and local runners
-- Operators who care about “not SaaS” positioning
-- Dark UI surfaces
+- CLI docs
+- installation/setup pages
+- technical audiences
+- monochrome README contexts
 
 **Might fail when:**
 
-- It may look more like a generic dashboard/app icon than a distinctive logo.
-- It may underplay the memorable “Claw” name.
-- It could be visually busy unless heavily simplified.
-
----
+- It may look like any other CLI tool.
+- It underuses the Claw name.
+- It is less flexible for public brand/website use than Queue Q Core.
 
 ## Recommendation
 
-### Strongest direction: **Dispatch Claw**
+### Strongest route: Queue Q Core
 
-This is the best first route because it preserves the existing seed identity while giving it more intentional meaning. It is distinctive enough for an icon, already compatible with the current palette, and can be refined without changing the design system. It also gives CQ a memorable visual hook without drifting into robot/AI clichés.
+Choose **Queue Q Core** as the primary logo direction to refine. It best matches the current state of the brand pack and the README truth: ClawQueue is about queueing durable GitHub work and dispatching it locally. It can be made small, product-specific, and serious enough for GitHub while still pairing with the friendly mascot.
 
-Recommended refinement brief: make the current lightning/claw mark more ownable by combining three ideas in one simple stroke: **claw slash + dispatch arrow + terminal energy**.
+Recommended refinement brief: simplify the current queue-symbol/icon-with-queue into a crisp primary mark. Prioritize small-size legibility, a distinctive Q tail, and a two-color version using navy plus orange/red.
 
-### Strong alternate: **Issue Switchboard**
+### Strong alternate: Dispatch Claw
 
-This is the best strategic alternate if the team wants the mark to explain the product more directly. It is less distinctive than Dispatch Claw, but it anchors the identity in CQ’s real behavior: GitHub issues routed through local policy into workers, then back to review.
+Keep **Dispatch Claw** as the best alternate if Manos wants more energy and memorability. It is stronger emotionally, but weaker at explaining the product. It should be tested next to Queue Q Core in tiny sizes, README header use, and social preview use.
 
-Recommended exploration: create a simplified switchboard mark that can collapse to one amber dispatch node and two blue paths at small sizes.
+### Supporting system: Mascot Companion
 
-## Suggested follow-up image/logo generation prompts
+Keep the mascot, but treat it as supporting brand art rather than the main logo mark. It is useful for warmth and recall; it should not be forced into every small or official surface.
 
-Use these only after choosing a direction. Keep outputs exploratory and internal.
+## Suggested Follow-Up Prompt Set
 
-### Prompt A — Dispatch Claw
+Use these after choosing the route. These are internal exploration prompts, not public approval.
 
-> Design 6 rough logo mark concepts for “ClawQueue”, a local GitHub issue dispatcher for human-agent teams. Visual style: dark navy operator tooling, amber activity accent, precise developer UI, not SaaS-marketing. Core symbol: a single simple mark combining a claw slash, dispatch arrow, and lightning-like agent activity. Must work as a tiny GitHub avatar/favicon and as a README wordmark. Avoid robots, mascots, glossy 3D, and generic AI sparkles. Palette: #07111E navy, #317AE8 blue, #F59E0B amber, #E8EDF5 foreground.
+### Prompt A: Queue Q Core
 
-### Prompt B — Issue Switchboard
+> Create 8 rough logo mark explorations for ClawQueue, a local GitHub issue dispatch tool for operator-controlled AI agents. Core idea: a bold, simple Q that contains queue slots and a dispatch arrow or subtle claw-tail. Style: clean developer tooling, readable at favicon size, not glossy, not generic AI. Palette: deep navy #07162B, lobster orange #FF4A12, signal blue #158BFF, white. Show icon-only, wordmark lockup, monochrome, and tiny 16px preview.
 
-> Design 6 rough logo mark concepts for “ClawQueue”, a GitHub-native issue dispatch tool. Core symbol: GitHub issue queue items routed through a local dispatch/switchboard node into agent runners, then back to review. Style: minimal SVG-like geometry, dark-mode developer tooling, precise and trustworthy. Use amber only for the active dispatch point, blue for system paths, deep navy background. Avoid complex diagrams; each mark must remain legible at favicon size.
+### Prompt B: Dispatch Claw
 
-### Prompt C — Comparison sheet
+> Create 8 rough logo mark explorations for ClawQueue. Core idea: a single simple orange/red claw stroke that also reads as a dispatch arrow moving work through a queue. Brand feel: local-first, GitHub-native, operator-controlled, energetic but not hypey. Must work as favicon and README wordmark. Avoid robots, sparkles, glossy 3D, and complex diagrams. Palette: deep navy, lobster orange/red, small cyan accent only if needed.
 
-> Create a black-background concept sheet comparing two logo directions for “ClawQueue”: 1) Dispatch Claw, a single amber claw/arrow/bolt stroke; 2) Issue Switchboard, a minimal routing-node mark. Show icon-only, horizontal wordmark, monochrome, and tiny favicon versions. Brand feel: local-first, GitHub-native, operator-controlled, durable work queue, human review. No mascots, no robots, no glossy gradients.
+### Prompt C: Mascot Support System
 
-## Human approval note
+> Create a compact brand sheet for ClawQueue showing how the existing robotic claw mascot can support, but not replace, a primary Q queue logo. Include: primary icon, mascot hero use, GitHub avatar, favicon, README header, social preview. Keep the mascot friendly but reduce detail for small sizes. Style: clean docs product, not toy-like, not enterprise bland.
 
-All directions above are internal exploratory concepts. Any public logo selection should go through human review, small-size checks, basic similarity checks against neighboring devtool logos, and at least one pass as plain SVG on the existing README/design-system surfaces.
+### Prompt D: Comparison Sheet
+
+> Create a black/white and color comparison sheet for two logo directions: 1) Queue Q Core, a Q with queue bars and dispatch tail; 2) Dispatch Claw, a single claw/arrow action stroke. Show each at 16px, 32px, 128px, horizontal wordmark, and monochrome. Score each for readability, distinctiveness, product clarity, and fit with the current ClawQueue docs brand.
+
+## Success Metric
+
+This artifact succeeds if Manos can choose one of three next actions without more strategy work:
+
+- approve Queue Q Core for visual refinement
+- request a Dispatch Claw comparison pass
+- keep the current mascot/wordmark system and only refine small-size marks
+
+The next measurable signal should be a visual comparison sheet with small-size previews and a human approval decision.
+
+## Human Approval Note
+
+This is internal brand exploration only. Any public logo change, README asset replacement, GitHub social preview update, or docs brand-system update needs explicit human approval before implementation.
+
