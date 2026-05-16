@@ -2,7 +2,7 @@
 
 **Issue:** ClawQueue/ClawQueue#1  
 **Date:** 2026-05-17  
-**Status:** Internal concept exploration for human selection. Not public launch guidance. No product/source files changed.
+**Status:** Retry-pass internal concept exploration for human selection. Not public launch guidance. No product/source files changed.
 
 ## Goal
 
@@ -164,7 +164,30 @@ A strong ClawQueue logo should:
 - It underuses the Claw name.
 - It is less flexible for public brand/website use than Queue Q Core.
 
-## Recommendation
+## Recommendation And Decision Aid
+
+### Selection Matrix
+
+Scores are directional, not final design judgment. They are meant to help Manos choose which route deserves visual exploration first.
+
+| Direction | Product clarity | Tiny-size potential | Distinctiveness | Fit with current assets | Risk |
+|---|---:|---:|---:|---:|---|
+| Queue Q Core | High | High | Medium | High | Can become generic if the Q tail is not ownable |
+| Dispatch Claw | Medium | High | High | Medium-high | Can read as speed/lightning instead of queue/review |
+| Operator Switchboard | High | Low-medium | Medium | Medium | Too diagrammatic at small sizes |
+| Mascot Companion System | Medium | Low | High | High | Too playful/detailed as the primary logo |
+| Terminal Queue Badge | Medium | Medium | Low-medium | Medium | Generic CLI-tool feel |
+
+### Approval-Ready Decision
+
+Recommended approval decision: **approve Queue Q Core for the next visual refinement pass**, with **Dispatch Claw as the comparison route**. Keep the mascot in the brand system, but treat it as supporting art until small-size tests prove otherwise.
+
+The next artifact should not be another strategy memo. It should be a visual comparison sheet with:
+
+- Queue Q Core and Dispatch Claw side by side
+- icon-only, horizontal wordmark, monochrome, and dark/light background variants
+- 16px, 32px, 128px, and README-header previews
+- one short scorecard for readability, product clarity, distinctiveness, and current-brand fit
 
 ### Strongest route: Queue Q Core
 
@@ -213,4 +236,3 @@ The next measurable signal should be a visual comparison sheet with small-size p
 ## Human Approval Note
 
 This is internal brand exploration only. Any public logo change, README asset replacement, GitHub social preview update, or docs brand-system update needs explicit human approval before implementation.
-
