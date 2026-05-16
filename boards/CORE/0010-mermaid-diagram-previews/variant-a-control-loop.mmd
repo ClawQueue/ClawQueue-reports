@@ -1,0 +1,30 @@
+flowchart LR
+    O[Operator intent] --> I[OpenClaw intake]
+    P[Project docs and repo context] --> I
+    I --> GH[GitHub issue and project queue]
+
+    GH --> CQ[ClawQueue local scheduler]
+    CQ --> R{Labels and profile policy}
+
+    R --> A[OpenClaw agent]
+    R --> B[Codex CLI]
+    R --> C[Claude Code CLI]
+
+    A --> OUT[Comment, artifact, branch, or PR]
+    B --> OUT
+    C --> OUT
+
+    OUT --> REVIEW[Human review in GitHub]
+    REVIEW --> GH
+
+    classDef context fill:#EFF6FF,stroke:#64748B,stroke-width:1.5px,color:#0F172A;
+    classDef github fill:#F8FAFC,stroke:#0F172A,stroke-width:2px,color:#0F172A;
+    classDef cq fill:#DBEAFE,stroke:#317AE8,stroke-width:2.5px,color:#0B2E5F;
+    classDef runner fill:#FFF7ED,stroke:#F59E0B,stroke-width:2px,color:#7C2D12;
+    classDef review fill:#DCFCE7,stroke:#16A34A,stroke-width:2px,color:#14532D;
+
+    class O,P,I context;
+    class GH github;
+    class CQ,R cq;
+    class A,B,C runner;
+    class OUT,REVIEW review;

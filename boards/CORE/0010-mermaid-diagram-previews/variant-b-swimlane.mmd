@@ -1,0 +1,40 @@
+flowchart TB
+    subgraph Human["Human / OpenClaw intake"]
+        H1[Messy request]
+        H2[Project context]
+        H3[Scoped issue brief]
+        H1 --> H3
+        H2 --> H3
+    end
+
+    subgraph GitHub["GitHub durable workflow"]
+        G1[Issue]
+        G2[Labels]
+        G3[Project status: Todo]
+        G4[Comments, artifacts, PRs]
+        G1 --> G2 --> G3
+    end
+
+    subgraph Local["Local ClawQueue runtime"]
+        C1[Scheduler scan]
+        C2[Policy and locks]
+        C3[Mode and runner selection]
+        C4[Agent execution]
+        C1 --> C2 --> C3 --> C4
+    end
+
+    H3 --> G1
+    G3 --> C1
+    C4 --> G4
+    G4 --> R[Human review]
+    R --> G1
+
+    classDef human fill:#EFF6FF,stroke:#64748B,stroke-width:1.5px,color:#0F172A;
+    classDef github fill:#F8FAFC,stroke:#0F172A,stroke-width:2px,color:#0F172A;
+    classDef local fill:#DBEAFE,stroke:#317AE8,stroke-width:2px,color:#0B2E5F;
+    classDef review fill:#DCFCE7,stroke:#16A34A,stroke-width:2px,color:#14532D;
+
+    class H1,H2,H3 human;
+    class G1,G2,G3,G4 github;
+    class C1,C2,C3,C4 local;
+    class R review;
